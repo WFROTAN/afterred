@@ -7,6 +7,8 @@ const normalize = `
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
   body {
     font-family: ${props => props.theme.font.secondary};
   }

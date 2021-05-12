@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-absurd",
+  "name": "afterred",
   "private": true,
-  "description": "An absurd starter for Gatsby",
+  "description": "After Red",
   "version": "0.1.0",
   "author": "Ajay NS <ajay.ns@outlook.com>",
   "dependencies": {
@@ -13,6 +13,7 @@
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-svgr": "^2.0.1",

@@ -15,7 +15,9 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
+import { ReactComponent as LogoRocket } from '../../../images/logos/logo-rocket.svg';
+
+const NAV_ITEMS = ['About', 'Work', 'FAQ', 'Contact'];
 
 class Navbar extends Component {
   state = {
@@ -59,7 +61,14 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Absurd</Brand>
+          <div className="logo-container">
+            <LogoRocket />{' '}
+            <div className="logo-text">
+              <Brand>
+                <span>After</span>&nbsp;Red
+              </Brand>
+            </div>
+          </div>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
+//import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "mockup-main" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -39,9 +39,9 @@ const Header = () => (
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
+                <StyledLink href="#contact">
+                  Connect with us. &nbsp;&#x2794;
+                </StyledLink>
               </p>
             </Text>
           </Grid>
@@ -52,8 +52,8 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
+  background-color: #f6f6f6;
+  padding-top: 146px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
@@ -98,9 +98,11 @@ const Text = styled.div`
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+const StyledLink = styled(Link)`
+  color: white;
   text-decoration: none;
+  background-color: #ff0000;
+  padding: 3px;
 
   &:hover {
     color: ${props => props.theme.color.black.regular};

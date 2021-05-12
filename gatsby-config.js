@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `After Red`,
+        short_name: `After Red`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
@@ -58,6 +58,14 @@ module.exports = {
           '@sections': path.resolve(__dirname, 'src/components/sections'),
           '@styles': path.resolve(__dirname, 'src/styles/'),
           '@static': path.resolve(__dirname, 'static/'),
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /logos/, // See below to configure properly
         },
       },
     },

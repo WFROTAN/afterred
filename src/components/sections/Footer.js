@@ -1,27 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
-import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
+import { ReactComponent as LogoRocket } from '../../images/logos/logo-rocket.svg';
 
 const SOCIAL = [
   {
-    icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    icon: 'About',
+    link: '#about',
   },
   {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    icon: 'Work',
+    link: '#work',
   },
   {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    icon: 'FAQ',
+    link: '#faq',
+  },
+  {
+    icon: 'Contact',
+    link: '#contact',
   },
 ];
 
@@ -52,20 +53,18 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
+              <div className="logo-container">
+                <LogoRocket />{' '}
+                <div className="logo-text">
+                  <span>After</span>&nbsp;Red
+                </div>
+              </div>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink key={link} href={link}>
-                  <img src={icon} alt="link" />
-                </ExternalLink>
+                <Link key={link} href={link}>
+                  {icon}
+                </Link>
               ))}
             </SocialIcons>
           </StyledContainer>
@@ -87,6 +86,17 @@ const SocialIcons = styled.div`
   @media (max-width: ${props => props.theme.screen.sm}) {
     margin-top: 40px;
   }
+
+  a {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #211e26;
+    cursor: pointer;
+  }
+
+  a:not(:last-child) {
+    margin-right: 0.75em;
+  }
 `;
 
 const FooterWrapper = styled.footer`
@@ -103,13 +113,33 @@ const Copyright = styled.div`
     text-decoration: none;
     color: inherit;
   }
+
+  span {
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Prata', serif;
+
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+
+    span {
+      color: #ff4432;
+    }
+  }
 `;
 
 const Art = styled.figure`
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-top: 48px;
+  margin-top: 0px;
+  background-color: #f6f6f6;
 `;
 
 const StyledContainer = styled(Container)`

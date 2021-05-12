@@ -7,58 +7,47 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'How much will it cost to design and develop my website?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        Each business's needs are different, so due to variations in scope,
+        pricing from one web design to the next can be quite different. Our
+        typical end-to-end website redesign costs $50,000-$100,000. If you have
+        a well-defined scope, check out our website cost calculator for a more
+        refined estimate. If you’d like a more detailed breakdown of the
+        pricing, request a copy of our pricing sheet.
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'How long does it take to build my website?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        Similar to questions regarding website cost, the timeline will vary
+        greatly based on the scope of your web design project. Typically, our
+        end-to-end build projects take 4-6 months to complete.
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'What size and type of companies do you work with?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        We have an even balance of start-ups, small businesses, non-profits, and
+        enterprise clients across a multitude of industries. To get a better
+        sense of our wide range of web design projects, check out our client's
+        list.
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'Where is your team located?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
-      </>
-    ),
-  },
-  {
-    title: 'What exactly does Gatsby build?',
-    content: () => (
-      <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        Our web design & development team is 100% based in the United States.
+        Our headquarters is located in Pittsburgh, PA, and we have a satellite
+        office located in New York, NY. We also have some remote employees in
+        Utah, California, West Virginia, Colorado, and Florida.
       </>
     ),
   },

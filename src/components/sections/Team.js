@@ -7,34 +7,42 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
-    role: 'Founder',
+    name: 'Flat World',
+    image: 'flatworld.png',
+    role: 'Going JAMstack with Hassle-free WordPress and Gatsby.',
+    url: 'https://flatworld.co/',
   },
   {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    name: 'Fox Crest Media',
+    image: 'foxcrest-media.png',
+    role: 'Blazing Fast & SEO Friendly site for a copy write agency.',
+    url: 'https://foxcrestmedia.com/',
   },
   {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    name: 'Veta Virtual',
+    image: 'vetavirtual2.png',
+    role: 'Increased customer conversion and site speed.',
+    url: 'https://www.vetavirtual.com/',
   },
   {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
+    name: 'Appier',
+    image: 'appier.png',
+    role: 'Better UX/UI led to better client conversion and user engagement. ',
+    url: 'https://www.appier.com/',
   },
   {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
+    name: 'AutoloadIT',
+    image: 'autoloadit.png',
+    role:
+      'Delivered a fast, high converting site for an automotive imaging company.',
+    url: 'https://autoloadit.com/',
   },
   {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
+    name: 'WSM',
+    image: 'WSM.jpg',
+    role:
+      'Developed an SEO, performance centerd site that lead to higher google rankings.',
+    url: 'https://wsm.org/',
   },
 ];
 
@@ -67,18 +75,20 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="work" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
+          <h1>Our Work</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, role, url }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
                 <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  <a href={url} target="_blank">
+                    <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  </a>
                   <Title>{name}</Title>
                   <Subtitle>{role}</Subtitle>
                 </div>

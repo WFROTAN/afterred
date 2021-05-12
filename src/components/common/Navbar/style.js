@@ -4,7 +4,7 @@ import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;
-  background-color: ${props => props.theme.color.primary};
+  background-color: #f6f6f6;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,6 +15,20 @@ export const StyledContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+
+    span {
+      color: #ff4432;
+    }
+  }
 `;
 
 export const NavListWrapper = styled.div`

@@ -48,12 +48,13 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>
+                We <span>focus</span> on results.
+              </h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                We care about the impact our work has on your business or
+                organization—not how it looks in our portfolio or in an award
+                showcase.
               </p>
             </div>
             <Art>
@@ -62,30 +63,32 @@ const About = () => (
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
+              <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>
+                We're <span>responsive</span>.
+              </h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                We limit the number of clients we take on each year to ensure
+                each one has an outstanding customer experience. Expect
+                responses in hours—not days.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>
+                We go the <span>extra</span> mile.
+              </h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
+                We view our engagements as relationships—not vendor agreements.
+                In addition to what we produce, we also educate our customers on
+                digital best practices along the way.
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+              <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
           </Grid>
         </Container>
@@ -93,6 +96,14 @@ const About = () => (
     )}
   />
 );
+
+const SectionHeading = styled.div`
+  text-align: center;
+
+  h2 {
+    font-weight: bold;
+  }
+`;
 
 const Grid = styled.div`
   display: grid;
@@ -112,6 +123,10 @@ const Grid = styled.div`
 
   h2 {
     margin-bottom: 16px;
+  }
+
+  span {
+    color: #ff0000;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -140,3 +155,11 @@ const Art = styled.figure`
 `;
 
 export default About;
+
+/*
+          <SectionHeading>
+            <div>
+              <h2>What makes us different from every other digital agency?</h2>
+            </div>
+          </SectionHeading>
+*/
