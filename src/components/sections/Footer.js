@@ -94,7 +94,6 @@ const SocialIcons = styled.div`
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: ${props => props.theme.color.primary};
   padding: 32px 0;
 `;
 
@@ -133,6 +132,7 @@ const Art = styled.figure`
   justify-content: center;
   margin: 0;
   margin-top: 0px;
+  background-color: #f6f6f6;
 `;
 
 const StyledContainer = styled(Container)`
