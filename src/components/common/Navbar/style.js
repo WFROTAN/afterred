@@ -73,7 +73,7 @@ export const NavItem = styled.li`
 
 export const MobileMenu = styled.div`
   width: 100%;
-  background: ${props => props.theme.color.primary};
+  background: #f6f6f6;
 `;
 
 export const Brand = styled.div`

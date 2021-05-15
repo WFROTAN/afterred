@@ -12,10 +12,9 @@ const FAQS = [
       <>
         Each business's needs are different, so due to variations in scope,
         pricing from one web design to the next can be quite different. Our
-        typical end-to-end website redesign costs $50,000-$100,000. If you have
-        a well-defined scope, check out our website cost calculator for a more
-        refined estimate. If you’d like a more detailed breakdown of the
-        pricing, request a copy of our pricing sheet.
+        typical end-to-end website redesign can start from $1,000+. If you’d
+        like a more detailed breakdown of the pricing, request a copy of our
+        pricing sheet by contacting us below.
       </>
     ),
   },
@@ -25,7 +24,7 @@ const FAQS = [
       <>
         Similar to questions regarding website cost, the timeline will vary
         greatly based on the scope of your web design project. Typically, our
-        end-to-end build projects take 4-6 months to complete.
+        end-to-end build projects can take from 1 week to 2 months to complete.
       </>
     ),
   },
@@ -44,10 +43,8 @@ const FAQS = [
     title: 'Where is your team located?',
     content: () => (
       <>
-        Our web design & development team is 100% based in the United States.
-        Our headquarters is located in Pittsburgh, PA, and we have a satellite
-        office located in New York, NY. We also have some remote employees in
-        Utah, California, West Virginia, Colorado, and Florida.
+        Our web design & development team is 100% based in the Canada. Our
+        headquarters is located in Toronto, Canada.
       </>
     ),
   },
